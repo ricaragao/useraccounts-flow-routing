@@ -1,4 +1,12 @@
-[![Meteor Icon](http://icon.meteor.com/package/useraccounts:flow-routing)](https://atmospherejs.com/useraccounts/flow-routing)
+# Compatibility
+
+**Compatible with Meteor 2.4**
+
+This repository provides versions for the package [useraccounts:flow-routing](https://github.com/meteor-compat/useraccounts-flow-routing/) that are compatible with latest Meteor. This is necessary because the author is not maintaining package anymore.
+
+## Changes
+- v1.15.0
+    - `api.versionsFrom` on `Package.onUse` was changed from `1.0.3` to `2.4`.
 
 # Flow Router add-on for User Accounts
 
