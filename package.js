@@ -8,25 +8,22 @@
 
 Package.describe({
   name: 'useraccounts:flow-routing',
-  summary: 'UserAccounts package providing routes configuration capability via kadira:flow-router.',
-  version: '1.15.0',
+  summary: 'UserAccounts package providing routes configuration capability via ostrio:flow-router-extra.',
+  version: '1.16.0',
   git: 'https://github.com/meteor-compat/useraccounts-flow-routing',
 });
 
 Package.onUse(function(api) {
   api.versionsFrom('METEOR@2.4');
 
+  api.use('ecmascript');
+
   api.use([
     'check',
-    'kadira:flow-router',
+    'ostrio:flow-router-extra',
     'underscore',
     'useraccounts:core',
     'modules'
-  ], ['client', 'server']);
-
-  api.imply([
-    'kadira:flow-router@2.12.1',
-    'useraccounts:core@1.15.0',
   ], ['client', 'server']);
 
   api.use([
